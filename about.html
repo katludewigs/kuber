@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About us — Kuber Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand"><span class="brand-mark"></span><span class="brand-text"><strong>KUBER</strong> PROJECTS</span></a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a class="link-cta" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <div class="container intro-inner">
+      <h1 class="intro-title">Who we are</h1>
+      <p class="intro-copy">Kuber Projects is an Australian-owned property developer focused on boutique residential, commercial, and community projects.</p>
+      <p class="intro-copy sub">We partner with architects, builders, and councils to deliver well-located projects that balance lifestyle, functionality, and long-term value.</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h3 class="section-kicker">What we offer</h3>
+      <div class="grid-3">
+        <article class="feature"><h4>Residential communities</h4><p>Deliver liveable neighbourhoods with smart planning and quality construction.</p></article>
+        <article class="feature"><h4>Commercial development</h4><p>Create retail and mixed-use spaces that support local business and growth.</p></article>
+        <article class="feature"><h4>Community infrastructure</h4><p>Develop childcare, senior living, and community assets that serve local needs.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container"><p>© <span id="year"></span> Kuber Projects. All rights reserved.</p></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

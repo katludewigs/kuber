@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>News — Kuber Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .news-list{display:grid;gap:16px}
+    .news-item{border:1px solid var(--border);border-radius:8px;background:#fff;padding:18px}
+    .news-item h4{margin-top:0}
+    .news-meta{font-size:.9rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand"><span class="brand-mark"></span><span class="brand-text"><strong>KUBER</strong> PROJECTS</span></a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a class="link-cta" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <div class="container intro-inner">
+      <h1 class="intro-title">News</h1>
+      <p class="intro-copy">Updates on planning approvals, construction milestones, and community outcomes.</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="news-list">
+        <article class="news-item">
+          <h4>Construction commences on Community Hub</h4>
+          <div class="news-meta">15 September 2025</div>
+          <p>Ground works begin on a mixed-use community hub featuring childcare, health services, and a public plaza.</p>
+        </article>
+        <article class="news-item">
+          <h4>Design refinements for Coastal Residences</h4>
+          <div class="news-meta">28 August 2025</div>
+          <p>The final design introduces shaded courtyards and improved pedestrian links to the foreshore.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container"><p>© <span id="year"></span> Kuber Projects. All rights reserved.</p></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

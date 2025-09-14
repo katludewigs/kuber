@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kuber Projects</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text"><strong>KUBER</strong> PROJECTS</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html" class="link-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1495562569060-2eec283d3391?q=80&w=1600&auto=format&fit=crop" alt="Family walking along the beach at sunset">
+
+    <div class="container hero-content">
+      <h1 class="hero-title">
+        Boutique residential,<br>
+        commercial, and community<br>
+        property development
+      </h1>
+      <p class="hero-lead">
+        Create meaningful spaces with a developer known for delivering
+        residential communities, commercial property development, and
+        community infrastructure backed by decades of experience.
+      </p>
+
+      <a href="contact.html" class="btn">Contact us</a>
+    </div>
+  </section>
+
+  <!-- Intro band -->
+  <section class="intro">
+    <div class="container intro-inner">
+      <h2 class="intro-title">
+        A boutique approach to residential, commercial,<br class="hide-sm">
+        and community development
+      </h2>
+      <p class="intro-copy">
+        Kuber Projects is an Australian-owned residential and commercial property developer, delivering boutique projects that combine lifestyle appeal,
+        long-term value, and everyday functionality.
+      </p>
+      <p class="intro-copy sub">
+        With decades of experience in property development and construction, we prioritise smart design, quality delivery, and prime locations, including
+        coastal homes, retail spaces, senior living facilities, and childcare centre development.
+      </p>
+    </div>
+  </section>
+
+  <!-- Built with purpose -->
+  <section class="features">
+    <div class="container">
+      <h3 class="section-kicker">Built with purpose</h3>
+
+      <div class="grid-3">
+        <article class="feature">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l3.5 3.5L12 10 8.5 6.5 12 3zm8 3l-3 4-5 10-5-10-3-4h16zM5 6l3.5 3.5L5 6zm14 0l-3.5 3.5L19 6z"/></svg>
+          </div>
+          <h4>Deliver boutique developments</h4>
+          <p>Specialise in lifestyle-led projects in prime locations with a focus on quality and purpose.</p>
+          <a class="text-cta" href="projects.html">Learn more</a>
+        </article>
+
+        <article class="feature">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+          </div>
+          <h4>Prioritise liveability and growth</h4>
+          <p>Plan communities and commercial spaces that support everyday life and long-term value.</p>
+          <a class="text-cta" href="projects.html">Learn more</a>
+        </article>
+
+        <article class="feature">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.3L12 16.9 6.4 19.6l1.1-6.3L3 8.9 9 8l3-6z"/></svg>
+          </div>
+          <h4>Combine design and experience</h4>
+          <p>Bring together seasoned construction know-how with considered architecture on each project.</p>
+          <a class="text-cta" href="projects.html">Learn more</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Kuber Projects. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

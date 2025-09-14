@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Kuber Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contact-wrap{max-width:720px;margin:0 auto}
+    .form-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    .form-row + .form-row{margin-top:12px}
+    .form-row.single{grid-template-columns:1fr}
+    input,textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font:inherit}
+    textarea{min-height:140px;resize:vertical}
+    .btn-submit{display:inline-block;margin-top:12px;padding:.75rem 1.1rem;border-radius:999px;background:var(--brand);color:#fff;text-decoration:none;border:0;cursor:pointer}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand"><span class="brand-mark"></span><span class="brand-text"><strong>KUBER</strong> PROJECTS</span></a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a class="link-cta" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <div class="container intro-inner">
+      <h1 class="intro-title">Contact</h1>
+      <p class="intro-copy">Send a message using the form below or email us directly.</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container contact-wrap">
+      <!-- Static “mailto” fallback -->
+      <form action="mailto:info@example.com" method="post" enctype="text/plain">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-row single">
+          <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-row single">
+          <textarea name="message" placeholder="Message" required></textarea>
+        </div>
+        <button class="btn-submit" type="submit">Send message</button>
+      </form>
+
+      <p class="intro-copy sub" style="text-align:left;margin-top:12px;">
+        Prefer email? <a href="mailto:info@example.com">info@example.com</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container"><p>© <span id="year"></span> Kuber Projects. All rights reserved.</p></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
