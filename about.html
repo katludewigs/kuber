@@ -3,20 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About us — Kuber Projects</title>
+  <title>About Kuber Projects — Kuber Projects</title>
+
+  <!-- Fonts + CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+<!-- Header -->
 <header class="site-header">
   <div class="container header-inner">
-    <a href="index.html" class="brand"><span class="brand-mark"></span><span class="brand-text"><strong>KUBER</strong> PROJECTS</span></a>
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><strong>KUBER</strong> PROJECTS</span>
+    </a>
+
     <nav class="nav" aria-label="Primary">
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html">Our projects</a></li>
         <li><a href="news.html">News</a></li>
-        <li><a href="about.html">About us</a></li>
+        <li><a href="about.html" aria-current="page">About us</a></li>
         <li><a class="link-cta" href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -24,27 +32,209 @@
 </header>
 
 <main>
-  <section class="intro">
-    <div class="container intro-inner">
-      <h1 class="intro-title">Who we are</h1>
-      <p class="intro-copy">Kuber Projects is an Australian-owned property developer focused on boutique residential, commercial, and community projects.</p>
-      <p class="intro-copy sub">We partner with architects, builders, and councils to deliver well-located projects that balance lifestyle, functionality, and long-term value.</p>
-    </div>
-  </section>
 
-  <section class="features">
-    <div class="container">
-      <h3 class="section-kicker">What we offer</h3>
-      <div class="grid-3">
-        <article class="feature"><h4>Residential communities</h4><p>Deliver liveable neighbourhoods with smart planning and quality construction.</p></article>
-        <article class="feature"><h4>Commercial development</h4><p>Create retail and mixed-use spaces that support local business and growth.</p></article>
-        <article class="feature"><h4>Community infrastructure</h4><p>Develop childcare, senior living, and community assets that serve local needs.</p></article>
+  <!-- HERO -->
+  <section class="about-hero">
+    <div class="container about-hero__inner">
+      <h1>About Kuber Projects</h1>
+      <p class="lead">
+        We deliver residential property development, commercial property development, and community infrastructure development projects
+        that prioritise comfort, lifestyle, and lasting value, shaped by real-world experience and a hands-on approach.
+      </p>
+
+      <div class="btn-row">
+        <a class="btn" href="projects.html">Explore our projects</a>
+        <a class="btn btn-ghost" href="contact.html">Contact us</a>
       </div>
     </div>
   </section>
+
+  <!-- SECTION 1: OUR STORY -->
+  <section class="intro">
+    <div class="container intro-inner">
+      <h2 class="intro-title">Purpose-led property development, grounded in experience</h2>
+      <p class="intro-copy">
+        Kuber Projects is an Australian-owned property development company delivering boutique residential, commercial property development,
+        and community infrastructure development. We build everything from coastal villas to childcare centre development, retail property
+        development, and community infrastructure such as women’s training facilities. Every project focuses on liveability, local impact,
+        and long-term value.
+      </p>
+    </div>
+  </section>
+
+  <!-- Industry recognition / awards -->
+  <section class="features">
+    <div class="container">
+      <h2 class="intro-title" style="text-align:center;margin-bottom:1rem">Industry recognition</h2>
+      <p class="intro-copy" style="text-align:center;max-width:70ch;margin-inline:auto">
+        Golden Bay and Mandurah have been shortlisted at the 8th Asia Property Awards Australia, recognised among the nation’s leading developments.
+      </p>
+
+      <div class="awards">
+        <article class="award">
+          <div class="award-media" aria-hidden="true"><span class="award-placeholder">Award image</span></div>
+          <h4>Best Investment Housing Development</h4>
+          <p class="muted">Kuber Villas™, Golden Bay</p>
+        </article>
+
+        <article class="award">
+          <div class="award-media" aria-hidden="true"><span class="award-placeholder">Award image</span></div>
+          <h4>Best Housing Development (Western Australia)</h4>
+          <p class="muted">Kuber Villas™, Mandurah</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="intro">
+    <div class="container">
+      <h3 class="section-kicker">How we work</h3>
+      <div class="grid-3">
+        <article class="feature">
+          <div class="icon circle" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h4>Small-scale focus</h4>
+          <p>We specialise in boutique communities, not volume builds.</p>
+        </article>
+
+        <article class="feature">
+          <div class="icon circle" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h4>End-to-end experience</h4>
+          <p>Our team combines planning, design, and delivery expertise.</p>
+        </article>
+
+        <article class="feature">
+          <div class="icon circle" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h4>Long-term mindset</h4>
+          <p>We choose sites, designs, and partners with future value in mind.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: WHAT WE VALUE -->
+  <section class="features">
+    <div class="container">
+      <h2 class="intro-title" style="text-align:center;margin-bottom:1rem">We build with purpose</h2>
+      <p class="intro-copy" style="text-align:center;max-width:70ch;margin-inline:auto">
+        At Kuber Projects, we believe that property development should leave a positive mark, not just a footprint.
+        That means working with trusted partners, selecting well-connected locations, and focusing on projects that make a positive difference.
+      </p>
+
+      <h3 class="section-kicker" style="margin-top:28px">Our approach</h3>
+      <div class="grid-3">
+        <article class="feature">
+          <div class="icon tick" aria-hidden="true">✓</div>
+          <h4>Community-minded locations</h4>
+          <p>We prioritise access to lifestyle, transport, education, and local infrastructure.</p>
+        </article>
+
+        <article class="feature">
+          <div class="icon tick" aria-hidden="true">✓</div>
+          <h4>Trusted partnerships</h4>
+          <p>We work with ethical builders and collaborators who share our standards.</p>
+        </article>
+
+        <article class="feature">
+          <div class="icon tick" aria-hidden="true">✓</div>
+          <h4>Responsible delivery</h4>
+          <p>Our projects balance practical function, environmental awareness, and long-term value.</p>
+        </article>
+      </div>
+
+      <div class="center">
+        <a class="btn" href="projects.html">View our projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: MEET THE TEAM -->
+  <section class="intro">
+    <div class="container">
+      <h2 class="intro-title">Led by experience, backed by care</h2>
+      <p class="intro-copy">
+        The Kuber Projects team brings decades of experience in property development, construction, and finance. We stay
+        involved from planning through to handover, making sure every detail contributes to comfort, function, and value.
+        We focus on doing the work properly and partner closely with trusted teams to deliver consistent results.
+      </p>
+
+      <div class="team">
+        <article class="person">
+          <div class="headshot" aria-hidden="true">
+            <!-- Placeholder headshot; replace src with your own -->
+            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=600&auto=format&fit=crop" alt="">
+          </div>
+          <div class="person-copy">
+            <h4>Amit Pall</h4>
+            <p class="muted">Founder and director</p>
+            <p>
+              Amit leads Kuber Projects with a focus on boutique-scale developments that deliver real value across residential,
+              commercial, and community sectors.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: CONTACT -->
+  <section class="contact-band">
+    <div class="container contact-band__inner">
+      <div>
+        <h2>Get in touch</h2>
+        <p>Want to know more about our residential, commercial, or community projects?</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn" href="contact.html">Contact us</a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<footer class="site-footer"><div class="container"><p>© <span id="year"></span> Kuber Projects. All rights reserved.</p></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p style="margin:0"><strong>Kuber Projects</strong></p>
+        <p class="muted" style="margin:.25rem 0 0">Boutique developments designed for lifestyle, growth, and long-term value.</p>
+      </div>
+
+      <div>
+        <p><strong>Address</strong><br>
+        Suite 1, Level 2/60 Phillip St, Parramatta NSW 2150</p>
+      </div>
+
+      <div>
+        <p><strong>Contact</strong><br>
+        Amit Pall — Director, Kuber Projects<br>
+        0431 389 413<br>
+        <a href="mailto:amit@kuberprojects.com.au">amit@kuberprojects.com.au</a></p>
+      </div>
+
+      <div>
+        <p><strong>Quick links</strong><br>
+        <a href="index.html">Home</a><br>
+        <a href="about.html">About us</a><br>
+        <a href="projects.html">Our projects</a><br>
+        <a href="news.html">News</a><br>
+        <a href="contact.html">Contact us</a></p>
+      </div>
+    </div>
+
+    <p style="text-align:center;margin-top:16px">© <span id="year"></span> Kuber Projects 2025</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
